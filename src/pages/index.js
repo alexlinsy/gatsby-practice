@@ -1,5 +1,9 @@
-import React from "react"
-
+import React from "react";
+import Layouts from "../components/Layouts";
 export default function Home() {
-  return <div>Hello world!</div>
+  return (
+    <Layouts>
+      <div>Hello world!</div>
+    </Layouts>
+  );
 }
