@@ -6,6 +6,7 @@ const blog = ({ data }) => {
   const {
     site: {
       siteMetadata: {
+        author,
         description,
         person: { name, age },
         title,
@@ -18,6 +19,7 @@ const blog = ({ data }) => {
       <div>This is blog page.</div>
       <div>
         <h1>{title}</h1>
+        <p>{author}</p>
         <p>{description}</p>
       </div>
       <div>
@@ -32,6 +34,7 @@ export const query = graphql`
   {
     site {
       siteMetadata {
+        author
         description
         data
         person {
