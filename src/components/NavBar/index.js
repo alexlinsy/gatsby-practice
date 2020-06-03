@@ -10,12 +10,12 @@ const NavBar = () => (
       </Link>
     </div>
     <div className="w-full flex-grow sm:flex sm:items-center sm:w-auto">
-      <a
-        href="#"
+      <Link
+        to="/meimei"
         className="block mr-4 mt-4 hover:text-white sm:mt-0 text-teal-200"
       >
         Me & Pets
-      </a>
+      </Link>
       <Link
         to="/blog"
         className="block mr-4 mt-4 hover:text-white sm:mt-0 text-teal-200"
