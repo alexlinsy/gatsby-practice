@@ -13,5 +13,13 @@ module.exports = {
     data: ["item1", "item2"],
     person: { name: "Alex", age: 24 },
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `61uvo2ku1ytf`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+  ],
 };
